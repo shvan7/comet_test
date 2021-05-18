@@ -20,7 +20,7 @@ const moveOnSquare = (char, location) => {
 }
 
 const checkIfForbiden = (arrayPositionForbidden, testPosition) => {
-  arrayPositionForbidden.find(
+  return arrayPositionForbidden.find(
     (e) => e.x === testPosition.x && e.y === testPosition.y,
   )
 }
